@@ -26,6 +26,7 @@ var summaries = new[]
 };
 //test
 app.MapGet("/Test", () => "This Is a Test");
+app.MapGet("/Number", (int number) => $"this number is{number} ");
 
 app.MapGet("/weatherforecast", () =>
 {
